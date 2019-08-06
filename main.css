@@ -1,0 +1,54 @@
+.box {
+    max-height: 100px;
+    max-width: 100px;
+    height: 100px;
+    width: 100px;
+    background-color: #e84610;
+    margin: 100px;
+    animation: abcd 3s linear infinite;
+}
+
+@keyframes abcd{
+from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.anotherone {
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    animation: updown 3s ease-in-out alternate infinite;
+}
+
+@keyframes updown{
+    from {
+        margin: 0px;
+    }
+    to {
+        margin-left: 300px;
+    }
+}
+
+.element {
+    width: 25px;
+    height: 25px;
+    margin: 25px;
+}
+
+.element:hover{
+    animation: muoviti 1s linear alternate infinite;
+}
+
+@keyframes muoviti{
+    from {
+        transform: translate(0% 0%);
+    }
+    to {
+        transform: translate(100%, 0%);
+    }
+}
